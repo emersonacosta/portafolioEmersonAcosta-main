@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #FFF;
+    
+}
+
+
+/* Header styles */
+.header {    
+    background-color: #2D4B73;    
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: center; /* Centra el menú */
+    gap: 10px;
+    width: 100%; /* Asegura que el nav ocupe todo el ancho disponible */
+}
+
+header nav a {
+    text-decoration: none;
+    background-color: #5277f3;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border: solid 1px;
+    border-radius: 20px;
+}
+
+header nav a:hover {
+    background-color: #5faa50;
+}
+
+/*presentacion styles*/
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 100px;    
+    background-color: #dadad8;    
+}
+
+.presentacion__contenido {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000000;
+    
+    
+}
+
+.presentacion__contenido__titulo {
+    font-size: 18px;
+    font-family: "Krona One", sans-serif;
+    color: #2D4B73;
+}
+
+.presentacion__contenido__texto {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.presentacion__enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.presentacion__enlaces__subtitulos {
+    font-family: "Krona One", sans-serif;
+    font-size: 18px;
+    color: #2f6b24;
+}
+
+.github {
+    width: 250px;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    background: black;
+    color: #fff;
+    border: 2px solid #2D4B73;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.github:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+}
+
+.instagram {
+    width: 250px;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+    color: #fff;
+    border: 2px solid #2D4B73;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+}
+
+.linkedin{
+    width: 250px;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    background: #0e76a8;
+    color: #fff;
+    border: 2px solid #2D4B73;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+}
+
+.foto {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;        
+    font-size: 1rem;
+    font-family: "Krona One", sans-serif;
+    color: #2D4B73;   
+}
+
+.titulos{
+    display: flex;
+    justify-content: center;
+    background-color: #2D4B73 ;
+    padding: 10px;
+    font-family: "Krona One", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Formación */
+.formacion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    background-color: #dadad8;
+}
+
+.formacion-icon {
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+    transition: transform 0.3s; /* Para agregar un efecto de hover */
+    padding: 20px;    
+}
+
+.formacion-icon:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+}
+.formaciones{  /*texto bajo las imagenes de formacion*/
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+    font-size: 14px;
+    margin: 20px;
+    max-width: 150px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    background-color: #dadad8;
+}
+
+.skill-icon {
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+    transition: transform 0.3s; /* Para agregar un efecto de hover */
+    padding: 20px;  
+}
+
+.skill-icon:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+}
+/* Hobbies */
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    background-color: #dadad8;
+}
+
+.hobbies-icon {
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+    transition: transform 0.3s; /* Para agregar un efecto de hover */
+    padding: 20px;  
+}
+
+.hobbies-icon:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+}
+
+/* Proyectos */
+.proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    background-color: #dadad8;
+}
+
+.proyectos-icon {
+    width: 500px; 
+    height: 300px;    
+    transition: transform 0.3s; /* Para agregar un efecto de hover */
+       
+}
+
+
+.proyecto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;   
+    font-family: "Krona One", sans-serif;
+    font-size: 14px;
+    margin: 20px;    
+}
+
+.boton1{
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #2D4B73;
+    color: #fff;
+    border: 2px solid #2D4B73;   
+    gap: 10px;
+    
+
+}
+
+.boton1:hover {
+    cursor: pointer;
+    background-color: #0bbfdf;
+}
+
+.boton2{
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #7fd410;
+    color: #fff;
+    border: 2px solid #2D4B73;    
+}
+
+.boton2:hover {
+    cursor: pointer;
+    background-color: #0bbfdf;
+}
+
+/* Contacto */
+
+.contacto{
+    background-color: #dadad8;
+}
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.contacto__formulario input,
+.contacto__formulario textarea,
+.contacto__formulario button {
+    padding: 10px;
+    border: 1px solid #2D4B73;
+    border-radius: 5px;
+}
+
+.contacto__formulario button {
+    background-color: #5277f3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto__formulario button:hover {
+    background-color: #5faa50;
+}
+
+.footer {
+    background-color: #2D4B73;
+    color: #fff;
+    padding: 24px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+

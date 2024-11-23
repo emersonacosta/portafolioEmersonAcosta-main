@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Emerson Acosta</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div>            
+            <nav>
+                <a href="#sobre-mi">Inicio</a>
+                <a href="#formacion">Formación</a>
+                <a href="#skills">Skills</a>
+                <a href="#hobbies">Hobbies</a>                
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+     <!-- Sección presentacion -->
+    
+        <section class="presentacion">
+            <div class="presentacion__contenido">
+                <h1 class="presentacion__contenido__titulo">
+                    Hola! Mi nombre es Emerson Acosta Mulato
+                </h1>
+                <p class="presentacion__contenido__texto">
+                    Soy Ingeniero de Sistemas con conocimientos especializados en desarrollo Front-end aplicando
+                    lenguajes como HTML, CSS y JavaScript. Ayudo a negocios y diseñadores a llevar a cabo buenas ideas. ¿Hablamos?
+                </p>
+                <div class="presentacion__enlaces">
+                    <h2 class="presentacion__enlaces__subtitulos">Accede a mis redes sociales:</h2>
+                    <a class="instagram" href="https://www.instagram.com/emeracos/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/instagram.png" alt="Ícono de Instagram"> Instagram
+                    </a>
+                    <a class="github" href="https://github.com/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/github.png" alt="Ícono de GitHub"> GitHub
+                    </a>
+                    <a class="linkedin" href="https://linkedin.com/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/linkedin.png" alt="Ícono de LinkedIn"> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <img src="./assets/fotoeme.png" alt="Retrato de Emerson Acosta Mulato" class="foto">
+        </section>
+
+        <!-- Sección Formación -->
+        <section id="formacion" class="formacion">
+            <div class="titulos"><h2>Formación</h2></div>
+            <div class="formacion-container">
+                <div class="formaciones"><img src="./assets/unad.jpg " alt="universidad Unad" class="formacion-icon"><p>Ingeniero de Sistemas (2024)</p></div>
+                <div class="formaciones"><img src="./assets/mintic.png" alt="mintic" class="formacion-icon"><p>Programador web full stack nivel básico (2024)</p></div>
+                <div class="formaciones"><img src="./assets/alura.jpg" alt="alura" class="formacion-icon"><p>Desarrollo Front-end (2024)</p></div>
+                <div class="formaciones"><img src="./assets/sena.png" alt="sena" class="formacion-icon"><p>Tecnologo en análisis y desarrollo sistemas de información (2018)</p></div>
+                <div class="formaciones"><img src="./assets/sena.png" alt="sena" class="formacion-icon"><p>Calidad en el desarollo de software (2017)</p></div>
+                <div class="formaciones"><img src="./assets/sena.png" alt="sena" class="formacion-icon"><p>Gestión de la seguridad informática (2019)</p></div>
+            </div>
+        </section>
+        
+        <!-- Sección Skills -->
+        <section id="skills" class="skills">
+            <div class="titulos"><h2>Skills</h2></div>
+            <div class="skills-container">
+                <img src="./assets/html5.png" alt="HTML5" class="skill-icon">
+                <img src="./assets/css.png" alt="CSS" class="skill-icon">
+                <img src="./assets/js.jpg" alt="JavaScript" class="skill-icon">
+                <img src="./assets/react.png" alt="React" class="skill-icon">
+            </div>
+        </section>
+
+        <!-- Sección Hobbies -->
+        <section id="hobbies" class="hobbies">
+            <div class="titulos"><h2>Hobbies</h2></div>
+            <div class="hobbies-container">
+                <img src="./assets/ciclismo.avif " alt="ciclismo" class="hobbies-icon">
+                <img src="./assets/gym.jpg" alt="gym" class="hobbies-icon">
+                <img src="./assets/lectura.png" alt="lectura" class="hobbies-icon">
+                <img src="./assets/cine.png" alt="cine" class="hobbies-icon">
+            </div>
+        </section>       
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="proyectos">
+            <div class="titulos"><h2>Proyectos</h2></div>
+            <div class="proyectos-container">
+                <div class="proyecto"><img src="./assets/encriptador.jpg "  alt="encriptador" class="proyectos-icon"></a>
+                    <a href="https://emersonacosta.github.io/desafio-encriptador/" target="_blank"><button class="boton1"><p>Ver Demo</p></button></a>
+                    <a href="https://github.com/emersonacosta/desafio-encriptador.git"  target="_blank"><button class="boton2"><p>Repositorio</p></button></a>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contacto">
+            <div class="titulos"><h2>Contacto</h2></div>
+            <form action="#" class="contacto__formulario">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Emerson Acosta Mulato. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
