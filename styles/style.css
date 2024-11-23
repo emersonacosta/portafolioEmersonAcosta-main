@@ -4,21 +4,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     background-color: #FFF;
-    
 }
 
-
 /* Header styles */
-.header {    
-    background-color: #2D4B73;    
+.header {
+    background-color: #2D4B73;
     font-family: "Montserrat", sans-serif;
     padding: 10px;
-    
+    position: relative;
 }
 
 header nav {
@@ -43,24 +40,27 @@ header nav a:hover {
     background-color: #5faa50;
 }
 
-/*presentacion styles*/
 
+
+
+/* Presentación styles */
 .presentacion {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    gap: 100px;    
-    background-color: #dadad8;    
+    justify-content: center;
+    gap: 100px;
+    background-color: #dadad8;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .presentacion__contenido {
-    width: 615px;
+    width: 100%;
+    max-width: 615px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     color: #000000;
-    
-    
 }
 
 .presentacion__contenido__titulo {
@@ -88,7 +88,7 @@ header nav a:hover {
     color: #2f6b24;
 }
 
-.github {
+.github, .instagram, .linkedin {
     width: 250px;
     text-align: center;
     padding: 21.5px 0;
@@ -97,61 +97,30 @@ header nav a:hover {
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    background: black;
-    color: #fff;
     border: 2px solid #2D4B73;
     display: flex;
     justify-content: center;
     gap: 10px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.github:hover {
+.github {
+    background: black;
+    color: #fff;
+}
+
+.github:hover, .instagram:hover, .linkedin:hover {
     transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
 }
 
 .instagram {
-    width: 250px;
-    text-align: center;
-    padding: 21.5px 0;
-    border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
     background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
     color: #fff;
-    border: 2px solid #2D4B73;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    transition: background-color 0.3s ease;
 }
 
-.instagram:hover {
-    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
-}
-
-.linkedin{
-    width: 250px;
-    text-align: center;
-    padding: 21.5px 0;
-    border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
+.linkedin {
     background: #0e76a8;
     color: #fff;
-    border: 2px solid #2D4B73;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.linkedin:hover {
-    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
 }
 
 .foto {
@@ -163,16 +132,16 @@ header nav a:hover {
 h1 {
     display: flex;
     justify-content: center;
-    margin-top: 30px;        
+    margin-top: 30px;
     font-size: 1rem;
     font-family: "Krona One", sans-serif;
-    color: #2D4B73;   
+    color: #2D4B73;
 }
 
-.titulos{
+.titulos {
     display: flex;
     justify-content: center;
-    background-color: #2D4B73 ;
+    background-color: #2D4B73;
     padding: 10px;
     font-family: "Krona One", sans-serif;
     font-size: 1rem;
@@ -183,22 +152,24 @@ h1 {
 .formacion-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;    
+    justify-content: space-around;
     background-color: #dadad8;
+    padding: 20px;
 }
 
 .formacion-icon {
-    width: 150px; 
-    height: 150px; 
+    width: 150px;
+    height: 150px;
     object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
     transition: transform 0.3s; /* Para agregar un efecto de hover */
-    padding: 20px;    
+    padding: 20px;
 }
 
 .formacion-icon:hover {
     transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
 }
-.formaciones{  /*texto bajo las imagenes de formacion*/
+
+.formaciones {
     text-align: center;
     font-family: "Krona One", sans-serif;
     font-size: 14px;
@@ -207,72 +178,45 @@ h1 {
 }
 
 /* Skills */
-.skills-container {
+.skills-container, .hobbies-container, .proyectos-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;    
+    justify-content: space-around;
     background-color: #dadad8;
+    padding: 20px;
 }
 
-.skill-icon {
-    width: 150px; 
-    height: 150px; 
-    object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
-    transition: transform 0.3s; /* Para agregar un efecto de hover */
-    padding: 20px;  
+.skill-icon, .hobbies-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.3s;
+    padding: 20px;
 }
 
-.skill-icon:hover {
-    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
-}
-/* Hobbies */
-.hobbies-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;    
-    background-color: #dadad8;
-}
-
-.hobbies-icon {
-    width: 150px; 
-    height: 150px; 
-    object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
-    transition: transform 0.3s; /* Para agregar un efecto de hover */
-    padding: 20px;  
-}
-
-.hobbies-icon:hover {
-    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+.skill-icon:hover, .hobbies-icon:hover {
+    transform: scale(1.1);
 }
 
 /* Proyectos */
-.proyectos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;    
-    background-color: #dadad8;
-}
-
-.proyectos-icon {
-    width: 500px; 
-    height: 300px;    
-    transition: transform 0.3s; /* Para agregar un efecto de hover */
-       
-}
-
-
-.proyecto{
+.proyecto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;   
+    gap: 20px;
     font-family: "Krona One", sans-serif;
     font-size: 14px;
-    margin: 20px;    
+    margin: 20px;
 }
 
-.boton1{
+.proyectos-icon {
+    width: 500px;
+    height: 300px;
+    transition: transform 0.3s;
+}
+
+.boton1, .boton2 {
     width: 100px;
     text-align: center;
     padding: 10px 0;
@@ -281,43 +225,27 @@ h1 {
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
+    color: #fff;
+}
+
+.boton1 {
     background-color: #2D4B73;
-    color: #fff;
-    border: 2px solid #2D4B73;   
-    gap: 10px;
-    
-
 }
 
-.boton1:hover {
+.boton1:hover, .boton2:hover {
     cursor: pointer;
     background-color: #0bbfdf;
 }
 
-.boton2{
-    width: 100px;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
+.boton2 {
     background-color: #7fd410;
-    color: #fff;
-    border: 2px solid #2D4B73;    
-}
-
-.boton2:hover {
-    cursor: pointer;
-    background-color: #0bbfdf;
 }
 
 /* Contacto */
-
-.contacto{
+.contacto {
     background-color: #dadad8;
 }
+
 .contacto__formulario {
     display: flex;
     flex-direction: column;
@@ -355,3 +283,48 @@ h1 {
     font-weight: 600;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+    }
+
+    .presentacion__contenido {
+        text-align: center;
+    }
+
+    .foto {
+        width: 200px;
+    }
+
+    .proyectos-icon {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav a {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+    .presentacion__contenido__titulo,
+    .presentacion__contenido__texto {
+        font-size: 14px;
+    }
+
+    .github, .instagram, .linkedin {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .foto {
+        width: 150px;
+    }
+
+    .formacion-icon, .skill-icon, .hobbies-icon {
+        width: 100px;
+        height: 100px;
+    }
+}
